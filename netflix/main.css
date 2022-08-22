@@ -1,0 +1,106 @@
+/* menu background */
+header {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/0f07b807-7be1-457d-be88-eb9153d5d4e9/60bb8ff9-5efe-4338-9ceb-97c29c005cd7/CO-en-20220815-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.menu {
+  /* background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/0f07b807-7be1-457d-be88-eb9153d5d4e9/60bb8ff9-5efe-4338-9ceb-97c29c005cd7/CO-en-20220815-popsignuptwoweeks-perspective_alpha_website_small.jpg"); */
+  height: 750px;
+  background: radial-gradient(transparent 0%, black 100%);
+  border-bottom: 7px solid rgb(59, 51, 51);
+}
+
+/* menu "nav" */
+.menu-body {
+  display: flex;
+  justify-content: space-between;
+  margin: 0rem 2.6rem;
+  padding: 1.8rem;
+}
+.menu-body ul {
+  display: flex;
+  gap: 2rem;
+}
+.menu-body ul li {
+  list-style: none;
+}
+.menu-body ul li button {
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: rgb(245, 63, 63);
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+}
+.menu-body ul li select {
+  font-size: 1rem;
+  border: 1px solid white;
+  padding: 0.5 1rem;
+  height: 2.1rem;
+}
+.menu-body ul li select option {
+  background-color: grey;
+}
+#menu-body-logo {
+  object-fit: cover;
+  width: 10.5rem;
+  height: 3rem;
+}
+
+/* menu content */
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem 30rem;
+  gap: 2rem;
+  padding-bottom: 10rem;
+}
+.menu-content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu-content-text p {
+  font-size: 1.6rem;
+}
+.menu-conten-signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
+}
+.menu-conten-signup p {
+  font-size: 1.2rem;
+}
+.menu-content-email {
+  display: flex;
+}
+.menu-content-email button {
+  width: 250px;
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(228, 28, 28);
+  transition: .2s ease-in-out;
+}
+.menu-content-email button:hover {
+  background-color: rgb(253, 40, 40);
+}
+#email {
+  width: 500px;
+  height: 70px;
+  font-size: 1.1rem;
+  padding-left: 1rem;
+  color: black;
+}
+
+/* main content */
