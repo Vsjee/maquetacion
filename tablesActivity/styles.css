@@ -18,8 +18,16 @@ a:hover {
   color: rgb(199, 118, 118);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 481px) {
+  img {
+    width: 300px;
+    transition: .8s ease;
+  }
+}
+
+@media screen and (max-width: 530px) {
   img {
     width: 150px;
+    transition: .8s ease;
   }
 }
