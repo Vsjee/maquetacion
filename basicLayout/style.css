@@ -13,11 +13,11 @@ a:hover {
 }
 aside {
   position: fixed;
-  top: 15rem;
+  top: 10rem;
   left: 80%;
 }
 article {
-  width: 50%;
+  width: 60%;
   float: left;
 }
 
@@ -51,11 +51,23 @@ article {
 }
 
 /* main content */
-main {
+.main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 50px 0 50px 0;
+}
+.main--articles {
+  margin: 50px auto;  
+}
+.main--articles h2{
+  margin: 25px auto;
+}
+.main--articles--section {
+  margin: 20px auto;
+}
+.main--articles--section h3{
+  margin: 10px auto;
 }
 
 /* footer */
@@ -65,7 +77,7 @@ main {
   background-color: rgb(20, 153, 109);
 }
 .footer div {
-  width: 50%;
+  width: 60%;
 }
 .footer--info {
   display: flex;
@@ -74,7 +86,19 @@ main {
   text-align: center;
   font-size: 12px;
 }
-@media (max-width: 500px) {
+@media (max-width: 630px) {
+  aside {
+    position: inherit;
+  }
+  article {
+    width: 80%;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 0 50px 0;
+  }
   .footer div {
     width: 100%;
     gap: 20px;
