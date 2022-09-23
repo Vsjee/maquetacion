@@ -140,6 +140,9 @@ article {
     width: 100%;
     gap: 20px;
   }
+  .footer div {
+    text-align: center;
+  }
   .footer--info {
     display: flex;
     flex-direction: column;
