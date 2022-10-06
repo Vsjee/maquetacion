@@ -1,0 +1,120 @@
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 800;
+  margin: 0 0 16px;
+}
+
+span {
+  color: #fff;
+  display: block;
+  font-size: 100px;
+  position: relative;
+}
+header {
+  position: relative;
+  right: 1rem;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+}
+li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+}
+li a:hover {
+  background: -webkit-linear-gradient(90deg, #007CF0, #00DFD8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+span::before {
+  animation-name: var(--animation, a);
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  background: linear-gradient(90deg, var(--start-color), var(--end-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+  font-size: 100px;
+  position: absolute;
+  inset: 0;
+  content: var(--content);
+  opacity: 1;
+}
+
+@keyframes a {
+  0%,
+  16.667%,
+  100% {
+    opacity: 1;
+  }
+
+  33.333%,
+  83.333% {
+    opacity: 0;
+  }
+}
+
+@keyframes a2 {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  33.333%,
+  50% {
+    opacity: 1;
+  }
+
+  16.667%,
+  66.667% {
+    opacity: 0;
+  }
+}
+
+@keyframes a3 {
+  0%,
+  50%,
+  100% {
+    opacity: 0;
+  }
+
+  66.667%,
+  83.333% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  span {
+    font-size: 70px;
+    transition: .6s ease-in-out;
+  }
+  span::before {
+    font-size: 70px;
+    transition: .6s ease-in-out;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  span {
+    font-size: 100px;
+    transition: .6s ease-in-out;
+  }
+  span::before {
+    font-size: 100px;
+    transition: .6s ease-in-out;
+  }
+}
