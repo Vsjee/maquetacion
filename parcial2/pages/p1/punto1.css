@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+html {
+  scroll-behavior: smooth;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f01620;
+  padding: 1rem;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+  transition: .4s ease-in-out;
+}
+header nav a:hover {
+  color: #000;
+}
+
+.container--header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30% 0 10%;
+  padding: 0;
+}
+.container--header h2 {
+  text-align: center;
+}
+.container--header figcaption {
+  text-align: center;
+}
+
+aside {
+  position: fixed;
+  top: 10rem;
+  width: 150px;
+  left: 75%;
+}
+aside ul li{
+  padding: .5rem 0 .5rem 0;
+}
+aside ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: .4s ease-in-out;
+}
+aside ul li a:hover {
+  color: #f01620;
+}
+
+.container--sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30% 0 10%;
+  padding: 0 0 10rem 0;
+}
+
+@media screen and (max-width: 1064px) {
+  img {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 380px) {
+  img {
+    width: 240px;
+  }
+  .container--header {
+    margin:0;
+  }
+}
+@media screen and (max-width: 700px) {
+  aside {
+    position: inherit;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 0 0;
+  }
+  aside ul li {
+    padding: 0;
+  }
+  .container--header {
+    margin:0;
+  }
+  .container--sections {
+    margin: 0 5% 0 5%;
+  }
+}
+
+.go-up {
+  cursor: pointer;
+  margin: 1rem 0 1rem 0;
+  position: fixed;
+  left: 85%;
+  background-color: black;
+  padding: .5rem;
+  border-radius: 50px;
+  top: 90%;
+
+  transition: .4s ease-in-out;
+}
+.go-up:hover {
+  background-color: #f01620;
+}
+.go-up a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  padding: 2rem 0 2rem 0;
+  background: #000;
+}
+footer span a {
+  color: white;
+  text-decoration: none;
+  transition: .4s ease-in-out;
+}
+footer span a:hover {
+  color: #f01620;
+}
