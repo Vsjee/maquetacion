@@ -118,3 +118,10 @@ span::before {
     transition: .6s ease-in-out;
   }
 }
+
+footer span {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
