@@ -1,0 +1,81 @@
+main {
+    margin: 0 20% 0 20%;
+    padding: 5rem 0 5rem 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+form input {
+    width: 350px;
+    padding: .4rem;
+    transition: .7s ease-in-out;
+}
+
+.container--id input {
+    width: 265px;
+    transition: .7s ease-in-out;
+}
+.container--id select {
+    height: 32px;
+}
+
+textarea {
+    width: 350px;
+    padding: .5rem;
+    resize: none;
+    transition: .7s ease-in-out;
+}
+
+.container--sexo {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    transition: .7s ease-in-out;
+}
+
+.input--submit {
+    cursor: pointer;
+    background-color: rgb(46, 46, 46);
+    color: #fff;
+    border-radius: 10px;
+    
+    transition: .4s ease-in-out;
+}
+.input--submit:hover {
+    color: rgb(133, 220, 255);
+    background-color: #000;
+}
+
+@media screen and (max-width: 625px) {
+    main {
+        margin: 0 5% 0 5%;
+    }
+}
+@media screen and (max-width: 456px) {
+    form input {
+        width: 250px;
+    }
+    .container--id input {
+        width: 162px;
+    }
+    textarea {
+        width: 250px;
+    }
+    .container--sexo {
+        width: 250px;
+    }
+}
