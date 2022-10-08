@@ -48,10 +48,13 @@ textarea {
 }
 
 .input--submit {
+    width: auto;
     cursor: pointer;
+    border: none;
     background-color: rgb(46, 46, 46);
     color: #fff;
     border-radius: 10px;
+    padding: .5rem;
     
     transition: .4s ease-in-out;
 }

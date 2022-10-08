@@ -21,23 +21,23 @@
             <h3>Formulario</h3>
             <article>
                 <form action="">
-                    <input type="text" placeholder="Primer nombre">
-                    <input type="text" placeholder="Primer apellido">
-                    <input type="email" placeholder="Tu correo">
+                    <input type="text" placeholder="Primer nombre" required autocomplete="username" name="primerNombre">
+                    <input type="text" placeholder="Primer apellido" required autocomplete="username" name="primerApellid">
+                    <input type="email" placeholder="Tu correo" required autocomplete="email" name="correo">
                     <div class="container--id">
-                        <select name="" id="">
-                            <option value="">Seleciona</option>
-                            <option value="">C.C</option>
-                            <option value="">T.I</option>
+                        <select name="documento" id="doc--id">
+                            <option value="seleciona">Seleciona</option>
+                            <option value="c.c">C.C</option>
+                            <option value="t.i">T.I</option>
                         </select>
-                        <input type="number" placeholder="Tu número de documento">
+                        <input type="number" placeholder="Tu número de documento" required autocomplete="cc-number" name="documento">
                     </div>
-                    <input type="date">
+                    <input type="date" required>
                     <div class="container--sexo">
-                        Hombre<input type="radio">
-                        Mujer<input type="radio">
+                        Hombre<input type="checkbox" name="genero-h">
+                        Mujer<input type="checkbox" name="genero-m">
                     </div>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Razon inscripción"></textarea>
+                    <textarea name="subject" id="" cols="30" rows="10" placeholder="Razon inscripción" required></textarea>
                     <input type="submit" class="input--submit">
                 </form>
             </article>
