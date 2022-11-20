@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --background: #151838;
+    --title: #d4d5d9;
+    --primaryColor: #fff;
+    --secondatyColor: #00ffcc;
+    --thirdColor: #000;
+}
+
+body {
+    background-color: var(--thirdColor);
+    color: var(--primaryColor);
+}
+
+/* header nav */
+.header {
+    background-color: #000;
+    padding: 0.5rem;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: #fff;
+}
+.header {
+    padding: 1rem;
+}
+.header__title {
+    color: var(--title);
+}
+.header__title span {
+    color: var(--primaryColor);
+}
+
+.header__nav__list__btn {
+    background: none;
+    padding: 0.3rem 0.5rem;
+    border: 2px solid var(--primaryColor);
+    border-radius: 18px;
+    transition: 0.4s ease-in-out;
+}
+.header__nav__list__btn:hover {
+    border: 2px solid var(--secondatyColor);
+}
+.header__nav__list__btn a:hover {
+    color: var(--secondatyColor);
+}
+
+.nav__links li {
+    list-style: none;
+}
+
+.nav__links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 18px;
+}
+.menu li {
+    padding: 5px 14px;
+}
+.menu li:hover {
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.menu li a {
+    color: var(--primaryColor);
+    transition: 0.4s ease-in-out;
+}
+.menu li a:hover {
+    color: var(--secondatyColor);
+}
+
+.dropdown {
+    background-color: var(--title);
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+.dropdown li + li {
+    margin-top: 10px;
+}
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+.dropdown li:hover {
+    color: var(--secondatyColor);
+}
+
+input[type='checkbox'] {
+    display: none;
+    background-color: rebeccapurple;
+}
+
+.nav__hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+.open {
+    background-color: red;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #000;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .menu li {
+        margin: 1rem;
+    }
+    input[type='checkbox']:checked ~ .menu {
+        display: block;
+    }
+    .nav__hamburger {
+        display: block;
+    }
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+}
+
+/* main content */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem 0 0 0;
+    transition: 1s ease-in-out;
+}
+
+.section__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 6rem 0 1rem;
+    width: 500px;
+    transition: 1s ease-in-out;
+}
+
+.section__info h1 {
+    font-size: 4rem;
+}
+.section__info p {
+    font-size: 1.5rem;
+    color: var(--title);
+}
+
+.section__info__btn {
+    cursor: pointer;
+    width: 100px;
+    padding: 0.5rem;
+    border-radius: 15px;
+    border: none;
+    color: var(--thirdColor);
+    background: rgb(0, 255, 146);
+    background: linear-gradient(
+        90deg,
+        rgba(0, 255, 146, 1) 0%,
+        rgba(51, 181, 255, 1) 100%
+    );
+    transition: 0.4s ease-in-out;
+}
+
+.section__info__btn:hover {
+    color: var(--primaryColor);
+    background: rgb(19, 192, 117);
+    background: linear-gradient(90deg, #3bdf98 0%, rgb(70, 147, 192) 100%);
+}
+
+@media screen and (max-width: 1082px) {
+    .section__picture picture img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .section {
+        flex-direction: column;
+    }
+    .section__picture picture img {
+        width: 100%;
+        padding: 5rem 0 1rem 0;
+    }
+}
+
+@media screen and (max-width: 658px) {
+    .header__nav__list {
+        display: none;
+    }
+    .section__info {
+        width: 100%;
+    }
+    .section__picture picture img {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .header__btn {
+        opacity: 1;
+    }
+}
