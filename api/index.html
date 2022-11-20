@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Multi Store</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        />
+        <script src="./index.js" defer></script>
+    </head>
+    <body>
+        <header class="header">
+            <h2>Multi Store</h2>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <a href="#"><i class="fa-solid fa-house"></i></a>
+                    <a href="#">Products</a>
+                    <a href="#">About us</a>
+                    <a href="#contact">Contact</a>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="home">
+                <h1>Welcome</h1>
+                <a href="#" class="home__btn">
+                    <i class="fa-solid fa-chevron-down fa-2xs"></i>
+                </a>
+            </section>
+
+            <h1 style="text-align: center">Clothes</h1>
+            <section class="products" id="products__clothes"></section>
+
+            <h1 style="text-align: center">Electronics</h1>
+            <section class="products" id="products__electronics"></section>
+
+            <h1 style="text-align: center">Furniture</h1>
+            <section class="products" id="products__furniture"></section>
+
+            <h1 style="text-align: center">Shoes</h1>
+            <section class="products" id="products__shoes"></section>
+
+            <section class="form__container">
+                <h1 id="contact">contact</h1>
+                <form action="" class="form">
+                    <input
+                        type="text"
+                        placeholder="Your first name"
+                        autocomplete="name"
+                        required
+                        name="firstName"
+                        class="form__input"
+                    />
+                    <input
+                        type="text"
+                        placeholder="Your last name"
+                        autocomplete="name"
+                        required
+                        name="lastName"
+                        class="form__input"
+                    />
+                    <input
+                        type="email"
+                        placeholder="Your email"
+                        autocomplete="email"
+                        required
+                        name="email"
+                        class="form__input"
+                    />
+                    <textarea
+                        name="subject"
+                        cols="30"
+                        rows="10"
+                        placeholder="Your subject"
+                    ></textarea>
+                    <input type="submit" class="form__btn" />
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <article class="container__info">
+                    <h1>Multi Store</h1>
+                </article>
+                <article class="container__newsletter">
+                    <span>newsletter</span>
+                    <input
+                        type="email"
+                        placeholder="Your email@email"
+                        autocomplete="email"
+                        required
+                        class="container__newsletter--input"
+                    />
+                    <input
+                        type="submit"
+                        class="container__newsletter--sumbit"
+                    />
+                </article>
+            </div>
+            <div class="footer__nav">
+                <article class="footer__nav__links">
+                    <a href="#">home</a>
+                    <a href="#">products</a>
+                    <a href="#">about us</a>
+                    <a href="#">contact</a>
+                </article>
+                <p>made by <span>David Hernandez</span></p>
+            </div>
+        </footer>
+    </body>
+</html>
